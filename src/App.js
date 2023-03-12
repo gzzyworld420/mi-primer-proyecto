@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
+
+let nombre = "Gzzy";
+let weed = ["Super Lemon Haze", "Blue Cheese", "Sour Diesel"];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>My first React app!</h1>
+      <img src="https://www.highlevelhealth.com/wp-content/uploads/2019/02/SLH.jpeg" alt="Demo Playground" width="750"/>
+      <p>My name is {nombre}</p>
+      <h2>Las últimas 3 geneticas que fume:</h2>
+      <ul>
+        {weed.map((genetica) => <li>{genetica}</li>)}
+      </ul>
     </div>
   );
 }
